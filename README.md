@@ -1,9 +1,6 @@
-# Fabric Example Mod
+# Oak's Seed Drops mod
+a mod based on the fabric loot tables example
 
-## Setup
+config is currently TOML might change that later but im too lazy to actually put effort in telling people basic JSON syntax and
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+#### Requires Cloth Config API and Fabirc API (ModMenu config GUI is not supported yet (Maven is shit rn))
