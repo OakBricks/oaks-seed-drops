@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "oak_seed_drops",
+  "version": "${version}",
+
+  "name": "Oak's Seed Drops'",
+  "description": "A mod to allow for custom seed drops (WIP)",
+  "authors": [
+    "OakBricks"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/user/5wEOWreE",
+    "sources": "https://github.com/OakBricks"
+  },
+
+  "license": "LGPLv3",
+  "icon": "assets/oaks_seed_drops/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.oakbricks.seeddrops.OakSeedDrops"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "conflicts": {
+  	"textile_agriculture": "*"
+  }
+}
