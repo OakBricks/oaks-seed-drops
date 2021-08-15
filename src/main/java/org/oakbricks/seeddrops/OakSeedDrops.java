@@ -72,21 +72,6 @@ public class OakSeedDrops implements ModInitializer {
 		    }
 
 		}));
-//		RESOURCE_PACK.addLootTable(id("minecraft:blocks/grass"),
-//				loot("minecraft:block")
-//						.pool(pool()
-//								.rolls(CONFIG.rolls.carrot_rolls)
-//								.entry(entry()
-//										.type("minecraft:item")
-//										.name("minecraft:carrot")
-//								.condition(predicate("minecraft:random_chance").parameter("chance", CONFIG.chances.carrot_chances)))
-//								.rolls(CONFIG.rolls.potato_rolls)
-//								.entry(entry()
-//										.type("minecraft:item")
-//										.name("minecraft:potato")
-//								)
-//								.condition(predicate("minecraft:random_chance").parameter("chance", CONFIG.chances.potato_chances)))
-//		);
-//		RRPCallback.BEFORE_VANILLA.register(a -> a.add(RESOURCE_PACK));
+
 	}
 }
