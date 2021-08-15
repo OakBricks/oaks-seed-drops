@@ -20,11 +20,11 @@ class OakSeedDropsConfig implements ConfigData {
         int wheat_seeds_booster_rolls = 0;
     }
     static class Chances {
-        Number carrot_chances = 0;
-        Number potato_chances = 0;
-        Number beetroot_seeds_chances = 0;
-        Number pumpkin_seeds_chances = 0;
-        Number melon_seeds_chances = 0;
-        Number wheat_seeds_booster_chances = 0;
+        float carrot_chances = 0;
+        float potato_chances = 0;
+        float beetroot_seeds_chances = 0;
+        float pumpkin_seeds_chances = 0;
+        float melon_seeds_chances = 0;
+        float wheat_seeds_booster_chances = 0;
     }
 }
