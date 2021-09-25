@@ -32,46 +32,5 @@ public class OakSeedDrops implements ModInitializer {
 //	public static final RuntimeResourcePack RESOURCE_PACK = RuntimeResourcePack.create(MOD_ID + ":drops");
 
 	@Override
-	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.debug("Carrot Drop Rolls: " + CONFIG.rolls.carrot_rolls);
-		LOGGER.debug("Potato Drop Rolls: " + CONFIG.rolls.potato_rolls);
-		LOGGER.debug("Beetroot Seeds Drop Rolls: " + CONFIG.rolls.beetroot_seeds_rolls);
-		LOGGER.debug("Melon Seeds Drop Rolls: " + CONFIG.rolls.melon_seeds_rolls);
-		LOGGER.debug("Pumpkin Seeds Drop Rolls: " + CONFIG.rolls.pumpkin_seeds_rolls);
-
-
-		LootTableLoadingCallback.EVENT.register(((resourceManager, lootManager, id, table, setter) -> {
-		   	if (GRASS_LOOT_TABLE_ID.equals(id)) {
-		       	if (GRASS_LOOT_TABLE_ID.equals(id)) {
-		           	FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-		           			.rolls(ConstantLootNumberProvider.create(CONFIG.rolls.carrot_rolls))
-							.conditionally(RandomChanceLootCondition.builder(CONFIG.chances.carrot_chances))
-		           			.with(ItemEntry.builder(Items.CARROT))
-		           			.rolls(ConstantLootNumberProvider.create(CONFIG.rolls.melon_seeds_rolls))
-							.conditionally(RandomChanceLootCondition.builder(CONFIG.chances.melon_seeds_chances))
-		           			.with(ItemEntry.builder(Items.MELON_SEEDS))
-		           			.rolls(ConstantLootNumberProvider.create(CONFIG.rolls.pumpkin_seeds_rolls))
-							.conditionally(RandomChanceLootCondition.builder(CONFIG.chances.pumpkin_seeds_chances))
-		           			.with(ItemEntry.builder(Items.PUMPKIN_SEEDS))
-		           			.rolls(ConstantLootNumberProvider.create(CONFIG.rolls.beetroot_seeds_rolls))
-							.conditionally(RandomChanceLootCondition.builder(CONFIG.chances.beetroot_seeds_chances))
-		           			.with(ItemEntry.builder(Items.BEETROOT_SEEDS))
-		           			.rolls(ConstantLootNumberProvider.create(CONFIG.rolls.wheat_seeds_booster_rolls))
-							.conditionally(RandomChanceLootCondition.builder(CONFIG.chances.wheat_seeds_booster_chances))
-		           			.with(ItemEntry.builder(Items.WHEAT_SEEDS))
-		           			.rolls(ConstantLootNumberProvider.create(CONFIG.rolls.potato_rolls))
-							.conditionally(RandomChanceLootCondition.builder(CONFIG.chances.potato_chances))
-		           			.with(ItemEntry.builder(Items.POTATO));
-
-		           	table.pool(poolBuilder);
-		        }
-		    }
-
-		}));
-
-	}
+	public void onInitialize() {}
 }
