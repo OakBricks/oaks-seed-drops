@@ -6,7 +6,7 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import java.lang.Number;
 
 @Config(name = OakSeedDrops.MOD_ID)
-class OakSeedDropsConfig implements ConfigData {
+public class OakSeedDropsConfig implements ConfigData {
     @ConfigEntry.Gui.CollapsibleObject
     Rolls rolls = new Rolls();
     Chances chances = new Chances();

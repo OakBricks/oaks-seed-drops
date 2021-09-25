@@ -1,17 +1,8 @@
 package org.oakbricks.seeddrops;
 
-import net.devtech.arrp.api.RRPCallback;
-import net.devtech.arrp.api.RuntimeResourcePack;
-
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
-import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.Items;
-import net.minecraft.loot.condition.RandomChanceLootCondition;
-import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.util.Identifier;
 
 import org.apache.logging.log4j.LogManager;
@@ -19,9 +10,6 @@ import org.apache.logging.log4j.Logger;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
-
-import static net.devtech.arrp.api.RuntimeResourcePack.id;
-import static net.devtech.arrp.json.loot.JLootTable.*;
 
 public class OakSeedDrops implements ModInitializer {
 	
